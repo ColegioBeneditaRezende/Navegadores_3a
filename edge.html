@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anoc.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Colégio Benedita</title>
+</head>
+<body>
+    <nav class="navegacao">
+        <!-- Logo E Texto -->
+        <section class="navegacao-comeco">
+            <img src="img/logo.png" alt="Benedita">
+            <p>Colégio Estadual Benedita Rosa Rezende</p>
+        </section>
+        <!-- Menus -->
+        <div class="navegacao-menu">
+            <ul class="navegacao-menu-click">
+                <a href="index.html"><li>Ínicio</li></a>
+                <a href=""><li>Navegadores</li></a>
+                <a href=""><li>Creditos</li></a>
+            </ul>
+            <section class="navegacao-menu-imagem">
+                <a href="https://www.facebook.com/BeneZLoficial/?locale=pt_BR"><img src="img/vetor-facebook.png" alt="Facebook"></a>
+                <img src="img/vetor-telefone.png" alt="">
+                <a href="https://www.google.com/search?client=opera-gx&q=benedita+rosa+reznende&sourceid=opera&ie=UTF-8&oe=UTF-8#"><button>Fale Conosco</button></a>
+            </section>
+        </div>
+    </nav>
+
+    <!-- Conteudo do meio imagem -->
+    <main class="conteudo-meio">
+        <section class="conteudo-meio-texto">
+            <h1>MICROSOFT EDGE</h1>
+            <p id="meu-texto"></p>
+        </section>
+        <img src="img/background.jpg" alt="">
+        <script>
+            const texto = "ANALISE E PROJETO DE SISTEMAS";
+            let i = 0;
+            const velocidade = 100; // velocidade em milissegundos
+    
+            function digitar() {
+            if (i < texto.length) {
+            document.getElementById("meu-texto").innerHTML += texto.charAt(i);
+            i++;
+            setTimeout(digitar, velocidade);
+          }
+        }
+    
+            digitar();
+        </script>
+    </main>
+
+
+    <div class="creditos">
+        <section class="conteudo-meio-secundario-background">
+            <img src="img/rafael.png" alt="">
+            <div class="conteudo-meio-secundario">
+                <h3>Autor:</h3>
+                <p>Rafael Novelli Joares</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="texto">
+        <h1>
+            A História do Navegador Microsoft Edge: Evolução e Inovação na Navegação Web
+O Microsoft Edge é o navegador web desenvolvido pela Microsoft Corporation, que foi lançado inicialmente em julho de 2015 como parte do sistema operacional Windows 10. No entanto, sua história remonta aos primórdios da Internet e reflete a constante evolução e inovação no campo da tecnologia de navegadores.
+Antes do Microsoft Edge, a Microsoft tinha outro navegador popular chamado Internet Explorer, que foi lançado em 1995 e dominou o mercado de navegadores por muitos anos. No entanto, com o passar do tempo, o Internet Explorer começou a enfrentar críticas por sua lentidão, falta de conformidade com os padrões da web e vulnerabilidades de segurança.
+Em resposta a essas preocupações e à crescente concorrência de navegadores como o Google Chrome e o Mozilla Firefox, a Microsoft decidiu reinventar sua abordagem de navegador. Surgiu então o Microsoft Edge, projetado para oferecer uma experiência de navegação mais rápida, segura e moderna.
+O Edge foi construído do zero com um novo motor de renderização chamado EdgeHTML e uma interface de usuário simplificada. Além disso, ele foi integrado ao assistente virtual da Microsoft, Cortana, e ao serviço de armazenamento em nuvem, OneDrive, para uma experiência mais integrada entre dispositivos Windows.
+Uma das características distintivas do Microsoft Edge foi sua capacidade de suportar extensões, permitindo aos usuários personalizar e estender a funcionalidade do navegador de acordo com suas necessidades. Além disso, o Edge introduziu recursos inovadores, como a capacidade de desenhar e fazer anotações diretamente em páginas da web.
+Em 2020, a Microsoft anunciou uma grande mudança para o Edge, abandonando o motor de renderização EdgeHTML em favor do Chromium, o mesmo motor usado pelo Google Chrome. Essa mudança permitiu uma maior compatibilidade com sites e uma experiência de navegação mais consistente para os usuários.
+Hoje, o Microsoft Edge continua a ser uma parte importante do ecossistema Windows, oferecendo uma plataforma sólida para navegação na web em computadores e dispositivos móveis. Com atualizações regulares e um compromisso contínuo com a inovação, o Edge continua a evoluir para atender às crescentes demandas dos usuários modernos da Internet.
+        </h1>
+        </div>
+
+    <footer class="rodape">
+        <img src="img/logo.png" alt="">
+         <!-- textos  -->
+        <section class="rodape-texto">
+            <h1>Colégio Estadual Benedita Rosa Rezende</h1>
+            <p>Av. Robert Koch, 377 - Jardim Guararapes, Londrina - PR, 86038-350</p>
+        </section>
+    </footer> 
+</body>
+</html>

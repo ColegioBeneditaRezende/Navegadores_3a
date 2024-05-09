@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anoc.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Colégio Benedita</title>
+</head>
+<body>
+    <nav class="navegacao">
+        <!-- Logo E Texto -->
+        <section class="navegacao-comeco">
+            <img src="img/logo.png" alt="Benedita">
+            <p>Colégio Estadual Benedita Rosa Rezende</p>
+        </section>
+        <!-- Menus -->
+        <div class="navegacao-menu">
+            <ul class="navegacao-menu-click">
+                <a href="index.html"><li>Ínicio</li></a>
+                <a href=""><li>Navegadores</li></a>
+                <a href=""><li>Creditos</li></a>
+            </ul>
+            <section class="navegacao-menu-imagem">
+                <a href="https://www.facebook.com/BeneZLoficial/?locale=pt_BR"><img src="img/vetor-facebook.png" alt="Facebook"></a>
+                <img src="img/vetor-telefone.png" alt="">
+                <a href="https://www.google.com/search?client=opera-gx&q=benedita+rosa+reznende&sourceid=opera&ie=UTF-8&oe=UTF-8#"><button>Fale Conosco</button></a>
+            </section>
+        </div>
+    </nav>
+
+    <!-- Conteudo do meio imagem -->
+    <main class="conteudo-meio">
+        <section class="conteudo-meio-texto">
+            <h1>SAFARI</h1>
+            <p id="meu-texto"></p>
+        </section>
+        <img src="img/background.jpg" alt="">
+        <script>
+            const texto = "ANALISE E PROJETO DE SISTEMAS";
+            let i = 0;
+            const velocidade = 100; // velocidade em milissegundos
+    
+            function digitar() {
+            if (i < texto.length) {
+            document.getElementById("meu-texto").innerHTML += texto.charAt(i);
+            i++;
+            setTimeout(digitar, velocidade);
+          }
+        }
+    
+            digitar();
+        </script>
+    </main>
+
+
+    <div class="creditos">
+        <section class="conteudo-meio-secundario-background">
+            <img src="img/gabriel-esquilo.png" alt="">
+            <div class="conteudo-meio-secundario">
+                <h3>Autor:</h3>
+                <p>Gabriel Lopes Custodio</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="texto">
+        <h1>O Safari é o navegador web desenvolvido pela Apple para seus dispositivos, como iPhones, iPads e Macs. Reconhecido por sua velocidade e eficiência, ele se destaca pela forte integração com o ecossistema da Apple, oferecendo recursos como continuidade de navegação entre dispositivos. Além disso, o Safari prioriza a privacidade e segurança do usuário, com recursos como Prevenção Inteligente de Rastreamento. Possui também ferramentas como Modo Leitura e extensões para uma experiência personalizada. Sua compatibilidade com padrões web e conjunto de ferramentas para desenvolvedores o tornam uma escolha popular tanto para usuários quanto para criadores de conteúdo online.
+        </h1>
+        </div>
+
+    <footer class="rodape">
+        <img src="img/logo.png" alt="">
+         <!-- textos  -->
+        <section class="rodape-texto">
+            <h1>Colégio Estadual Benedita Rosa Rezende</h1>
+            <p>Av. Robert Koch, 377 - Jardim Guararapes, Londrina - PR, 86038-350</p>
+        </section>
+    </footer> 
+</body>
+</html>

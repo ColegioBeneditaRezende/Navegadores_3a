@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anoc.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Colégio Benedita</title>
+</head>
+<body>
+    <nav class="navegacao">
+        <!-- Logo E Texto -->
+        <section class="navegacao-comeco">
+            <img src="img/logo.png" alt="Benedita">
+            <p>Colégio Estadual Benedita Rosa Rezende</p>
+        </section>
+        <!-- Menus -->
+        <div class="navegacao-menu">
+            <ul class="navegacao-menu-click">
+                <a href="index.html"><li>Ínicio</li></a>
+                <a href=""><li>Navegadores</li></a>
+                <a href=""><li>Creditos</li></a>
+            </ul>
+            <section class="navegacao-menu-imagem">
+                <a href="https://www.facebook.com/BeneZLoficial/?locale=pt_BR"><img src="img/vetor-facebook.png" alt="Facebook"></a>
+                <img src="img/vetor-telefone.png" alt="">
+                <a href="https://www.google.com/search?client=opera-gx&q=benedita+rosa+reznende&sourceid=opera&ie=UTF-8&oe=UTF-8#"><button>Fale Conosco</button></a>
+            </section>
+        </div>
+    </nav>
+
+    <!-- Conteudo do meio imagem -->
+    <main class="conteudo-meio">
+        <section class="conteudo-meio-texto">
+            <h1>GOOGLE CHROME</h1>
+            <p id="meu-texto"></p>
+        </section>
+        <img src="img/background.jpg" alt="">
+        <script>
+            const texto = "ANALISE E PROJETO DE SISTEMAS";
+            let i = 0;
+            const velocidade = 100; // velocidade em milissegundos
+    
+            function digitar() {
+            if (i < texto.length) {
+            document.getElementById("meu-texto").innerHTML += texto.charAt(i);
+            i++;
+            setTimeout(digitar, velocidade);
+          }
+        }
+    
+            digitar();
+        </script>
+    </main>
+
+
+    <div class="creditos">
+        <section class="conteudo-meio-secundario-background">
+            <img src="img/murillo2.0.png" alt="">
+            <div class="conteudo-meio-secundario">
+                <h3>Autor:</h3>
+                <p>Murillo Gonçalves Fagundes</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="texto">
+        <h1>
+            
+A história do Google Chrome é fascinante e cheia de inovações tecnológicas. O navegador foi lançado em setembro de 2008 pelo Google, com o objetivo de oferecer uma experiência de navegação mais rápida, segura e eficiente. Vamos dar uma olhada em como ele foi programado e algumas das principais etapas de sua evolução:
+        </h1>
+
+        <li>Motivação e Conceito Inicial: O Google decidiu criar seu próprio navegador principalmente devido à sua insatisfação com a velocidade e estabilidade dos navegadores disponíveis na época, especialmente em relação à complexidade crescente das aplicações web.</li>
+
+        <li>Motor de Renderização: Uma das principais decisões de design foi o desenvolvimento de um novo motor de renderização, chamado Blink, que substituiu o WebKit utilizado originalmente. Isso permitiu ao Chrome renderizar páginas da web de forma mais rápida e eficiente.</li>
+
+        <li>Linguagens e Ferramentas: O Chrome foi programado principalmente em C++ e Assembly para garantir desempenho e eficiência. Além disso, várias outras tecnologias foram empregadas, como JavaScript para a interface do usuário e HTML/CSS para o layout das páginas.</li>
+
+        <li>Arquitetura de Multiprocessos: Uma característica inovadora do Chrome foi a adoção de uma arquitetura de multiprocessos, onde cada aba ou guia é executada em um processo separado. Isso trouxe melhorias significativas em termos de estabilidade e segurança, pois uma aba travada não afeta as outras.</li>
+
+        <li>V8 JavaScript Engine: O Chrome introduziu o V8, um motor JavaScript de alto desempenho desenvolvido pela Google. O V8 compila o código JavaScript em código nativo antes de executá-lo, o que resulta em uma execução muito mais rápida de aplicativos web complexos.</li>
+
+        <li>Atualizações Contínuas: Desde o seu lançamento, o Chrome passou por inúmeras atualizações para adicionar novos recursos, melhorar o desempenho e corrigir problemas de segurança. O Google adota uma abordagem de lançamento contínuo, com atualizações automáticas que garantem que os usuários tenham sempre a versão mais recente do navegador.  </li>
+
+        <li>Expansão para Outras Plataformas: Além da versão para desktop, o Google Chrome foi expandido para uma variedade de plataformas, incluindo dispositivos móveis (Android e iOS) e até mesmo para sistemas operacionais menos comuns, como Chrome OS.</li>
+
+        <li>Ecossistema de Extensões: O Chrome possui uma vasta biblioteca de extensões e aplicativos disponíveis na Chrome Web Store, que permitem aos usuários personalizar e estender as funcionalidades do navegador de acordo com suas necessidades.</li>
+
+        <h1>No geral, o Google Chrome revolucionou a forma como interagimos com a web, oferecendo uma experiência de navegação rápida, segura e altamente personalizável. Sua arquitetura inovadora e o constante foco em melhorias tecnológicas garantem que ele continue sendo um dos navegadores mais populares do mundo.</h1>
+        </div>
+
+    <footer class="rodape">
+        <img src="img/logo.png" alt="">
+         <!-- textos  -->
+        <section class="rodape-texto">
+            <h1>Colégio Estadual Benedita Rosa Rezende</h1>
+            <p>Av. Robert Koch, 377 - Jardim Guararapes, Londrina - PR, 86038-350</p>
+        </section>
+    </footer> 
+</body>
+</html>

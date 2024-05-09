@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anoc.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Colégio Benedita</title>
+</head>
+<body>
+    <nav class="navegacao">
+        <!-- Logo E Texto -->
+        <section class="navegacao-comeco">
+            <img src="img/logo.png" alt="Benedita">
+            <p>Colégio Estadual Benedita Rosa Rezende</p>
+        </section>
+        <!-- Menus -->
+        <div class="navegacao-menu">
+            <ul class="navegacao-menu-click">
+                <a href="index.html"><li>Ínicio</li></a>
+                <a href=""><li>Navegadores</li></a>
+                <a href=""><li>Creditos</li></a>
+            </ul>
+            <section class="navegacao-menu-imagem">
+                <a href="https://www.facebook.com/BeneZLoficial/?locale=pt_BR"><img src="img/vetor-facebook.png" alt="Facebook"></a>
+                <img src="img/vetor-telefone.png" alt="">
+                <a href="https://www.google.com/search?client=opera-gx&q=benedita+rosa+reznende&sourceid=opera&ie=UTF-8&oe=UTF-8#"><button>Fale Conosco</button></a>
+            </section>
+        </div>
+    </nav>
+
+    <!-- Conteudo do meio imagem -->
+    <main class="conteudo-meio">
+        <section class="conteudo-meio-texto">
+            <h1>FIREFOX</h1>
+            <p id="meu-texto"></p>
+        </section>
+        <img src="img/background.jpg" alt="">
+        <script>
+            const texto = "ANALISE E PROJETO DE SISTEMAS";
+            let i = 0;
+            const velocidade = 100; // velocidade em milissegundos
+    
+            function digitar() {
+            if (i < texto.length) {
+            document.getElementById("meu-texto").innerHTML += texto.charAt(i);
+            i++;
+            setTimeout(digitar, velocidade);
+          }
+        }
+    
+            digitar();
+        </script>
+    </main>
+
+
+    <div class="creditos">
+        <section class="conteudo-meio-secundario-background">
+            <img src="img/keiver.jpeg" alt="">
+            <div class="conteudo-meio-secundario">
+                <h3>Autor:</h3>
+                <p>Keiver Pertuz Alexander</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="texto">
+        <h1>O Firefox é um navegador web desenvolvido pela Mozilla Foundation, conhecido por sua ênfase na privacidade, segurança e personalização. Lançado em 2002 como um concorrente ao Internet Explorer da Microsoft, o Firefox rapidamente ganhou popularidade devido à sua rapidez, recursos avançados e sua abordagem de código aberto.
+            Uma das características mais distintivas do Firefox é sua ênfase na privacidade do usuário. Ele oferece recursos como o "Modo de Navegação Privativa", que impede o armazenamento de histórico de navegação, cookies e outros dados enquanto está ativo. Além disso, o Firefox implementou recentemente o "Total Cookie Protection", uma medida que visa aumentar a privacidade do usuário ao limitar a capacidade de rastreamento entre sites.
+            Outro ponto forte do Firefox é sua extensa biblioteca de complementos, conhecida como "Add-ons". Esses add-ons permitem aos usuários personalizar e estender as funcionalidades do navegador de acordo com suas necessidades e preferências. Desde bloqueadores de anúncios até gerenciadores de senhas e temas visuais, a comunidade de desenvolvedores do Firefox oferece uma ampla gama de opções para personalizar a experiência de navegação.
+            Além disso, o Firefox é conhecido por sua comunidade ativa de desenvolvedores e defensores da web aberta. A Mozilla Foundation, organização por trás do Firefox, é uma defensora de longa data dos padrões abertos na web e da neutralidade da rede. Ela promove uma internet aberta e acessível a todos, e o Firefox é uma parte fundamental dessa missão.
+            Apesar da concorrência acirrada no mercado de navegadores, o Firefox continua sendo uma escolha popular para muitos usuários devido à sua reputação de ser um navegador confiável, seguro e preocupado com a privacidade. Com atualizações regulares e uma equipe dedicada de desenvolvedores, o Firefox continua a evoluir para atender às necessidades em constante mudança dos usuários da web.</h1>
+        </div>
+
+    <footer class="rodape">
+        <img src="img/logo.png" alt="">
+         <!-- textos  -->
+        <section class="rodape-texto">
+            <h1>Colégio Estadual Benedita Rosa Rezende</h1>
+            <p>Av. Robert Koch, 377 - Jardim Guararapes, Londrina - PR, 86038-350</p>
+        </section>
+    </footer> 
+</body>
+</html>
